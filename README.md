@@ -1,3 +1,6 @@
+![Python](https://img.shields.io/badge/Python-3.14-blue)
+![Status](https://img.shields.io/badge/status-done-yellow)
+
 # 📊 Análise de Salários em Data Jobs  
 Projeto desenvolvido durante a **Imersão de Dados da Alura**, utilizando **Python e Pandas**, com foco em análise exploratória de dados salariais na área de tecnologia.
 
