@@ -3,13 +3,11 @@
 import pandas as pd
 
 
-def carregar_dados():
-    # Carrega o arquivo CSV, pela variavel DF
-    df = pd.read_csv("https://raw.githubusercontent.com/guilhermeonrails/data-jobs/refs/heads/main/salaries.csv")
+def carregar_dados():   # Carrega o arquivo CSV, pela variavel DF
+    df = pd.read_csv("dados-imersao.csv")
     return df
 
-def traduzir_colunas(df):
-    # Renomeia as colunas para português
+def traduzir_colunas(df):   # Renomeia as colunas para português
     columns_translation = {
         'work_year': 'ano_trabalho',
         'experience_level': 'mapa_experiencia',
@@ -27,8 +25,7 @@ def traduzir_colunas(df):
     return df.rename(columns=columns_translation)
 
     
-def traduzir_experiencia(df):
-    # Traduz siglas de nivel_experiencia
+def traduzir_experiencia(df):    # Traduz siglas de nivel_experiencia
     mapa_experiencia = {
         'EN': 'junior',
         'MI': 'pleno',
@@ -39,8 +36,7 @@ def traduzir_experiencia(df):
     return df
 
 
-def explorar_dados(df):
-    # Exibe informações iniciais do dataframe
+def explorar_dados(df):    # Exibe informações iniciais do dataframe
     print("\n📌 Primeiras linhas:")
     print(df.head())
 
@@ -54,8 +50,8 @@ def explorar_dados(df):
     print(f"\n📌 Total de linhas: {linhas}")
     print(f"📌 Total de colunas: {colunas}")
 
-def analisar_categorias(df):
-    # Análises simples de colunas categóricas
+
+def analisar_categorias(df):    # Análises simples de colunas categóricas
     print("\n📊 Mapa experiencia:")
     print(df['mapa_experiencia'].value_counts())
 
@@ -69,20 +65,17 @@ def analisar_categorias(df):
     print("\n📊 Porte da empresa:")
     print(df['porte_empresa'].value_counts())
 
+
 def main():
-    df = carregar_dados()
+    df = carregar_dados()   # Carrega os dados
+    df = traduzir_colunas(df)   # Traduz colunas
+    df = traduzir_experiencia(df)    # Traduz valores categóricos   
 
-    # Traduz colunas
-    df = traduzir_colunas(df)
-
-    # Traduz valores categóricos
-    df = traduzir_experiencia(df)
-
-    # Agora sim analisa
-    explorar_dados(df)
+    explorar_dados(df)      # Agora sim analisa
     analisar_categorias(df)
 
 
 
 if __name__ == "__main__":
-    main()
+    df = carregar_dados()
+    print(df.head())
