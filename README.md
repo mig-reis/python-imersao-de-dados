@@ -1,90 +1,108 @@
-![Python](https://img.shields.io/badge/Python-3.14-blue)
-![Status](https://img.shields.io/badge/status-done-yellow)
+# 📊 Python – Imersão de Dados
 
-# 📊 Análise de Salários em Data Jobs  
-Projeto desenvolvido durante a **Imersão de Dados da Alura**, utilizando **Python e Pandas**, com foco em análise exploratória de dados salariais na área de tecnologia.
+Este repositório contém os estudos e práticas desenvolvidos durante a **Imersão de Dados da Alura**, com foco em **análise e exploração de dados utilizando Python e Pandas**.
 
-> Diferente do Google Colab, este projeto foi estruturado para rodar localmente no **VS Code**, com código organizado em funções e pronto para versionamento no GitHub.
+O projeto trabalha com uma base de dados real sobre **salários e cargos na área de tecnologia**, passando pelas etapas iniciais de um processo de análise de dados.
 
 ---
 
-## 📁 Base de Dados
+## 🎯 Objetivo do Projeto
 
-Os dados são carregados diretamente do repositório oficial da Alura:
-
-🔗 https://github.com/guilhermeonrails/data-jobs
-
-A base contém informações como:
-- Ano de trabalho  
-- Nível de experiência  
-- Tipo de emprego  
-- Cargo  
-- Salário  
-- Regime remoto  
-- Localização da empresa  
-- Porte da empresa  
+* Praticar **análise exploratória de dados (EDA)**
+* Aprender a **carregar, explorar e limpar dados** com Pandas
+* Entender a estrutura de um projeto simples de dados em Python
+* Consolidar os conceitos apresentados durante a Imersão
 
 ---
 
-## 🔄 Traduções Aplicadas
+## 📂 Estrutura do Repositório
 
-Para facilitar a leitura e análise, o projeto realiza:
-
-### ✔ Tradução das colunas
-Exemplo:
-- `experience_level` → `mapa_experiencia`
-- `job_title` → `cargo`
-- `salary_in_usd` → `salario_em_usd`
-
-### ✔ Tradução dos níveis de experiência
-- `EN` → **junior**
-- `MI` → **pleno**
-- `SE` → **senior**
-- `EX` → **executivo**
+```text
+python-imersao-de-dados/
+│
+├── aula_01_exploracao.py      # Exploração inicial dos dados
+├── aula_02_e_03.py           # Preparação, análises e visualizações dos dados
+├── dados-imersao.csv         # Base de dados utilizada no projeto
+├── requirements.txt          # Dependências do projeto
+└── README.md                 # Documentação do projeto
+```
 
 ---
 
-## 📊 Funcionalidades Atuais (Aula 01)
+## 🧠 Conteúdo das Aulas
 
-- Carregamento da base de dados
-- Tradução de colunas
-- Análise exploratória:
-  - `head()`
-  - `info()`
-  - `describe()`
-- Contagem de categorias:
-  - Nível de experiência
-  - Tipo de emprego
-  - Regime remoto
-  - Porte da empresa
+### 📌 Aula 01 – Exploração de Dados
+
+* Leitura do arquivo CSV
+* Visualização das primeiras linhas da base
+* Análise das colunas
+* Estatísticas descritivas iniciais
+
+Arquivo: `aula_01_exploracao.py`
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+### 📌 Aula 02 e 03 – Preparação, Análises e Visualizações
 
-- Python 3
-- Pandas
-- VS Code
-- Git & GitHub
+* Limpeza e organização da base
+* Aplicação de filtros e análises mais aprofundadas
+* Criação de visualizações gráficas
+* Separação do código em funções e módulos para melhor organização
+
+Arquivo: `aula_02_e_03.py`
+
+---
+
+## 🛠 Tecnologias Utilizadas
+
+* **Python 3**
+* **Pandas**
+* **VS Code**
+* **Git & GitHub**
 
 ---
 
 ## ▶️ Como Executar o Projeto
 
 1. Clone o repositório:
+
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/mig-reis/python-imersao-de-dados.git
+```
 
-2. Instale as dependências:
+2. Acesse a pasta do projeto:
+
+```bash
+cd python-imersao-de-dados
+```
+
+3. Instale as dependências:
+
+```bash
 pip install -r requirements.txt
+```
 
-3. Execute o script:
+4. Execute os scripts:
+
+```bash
 python aula_01_exploracao.py
+python aula_02_e_03.py
+```
 
+---
 
-🚀 Próximos Passos
+## 📈 Evoluções Implementadas
 
-Aula 02: análise de salários
-Gráficos com Matplotlib / Seaborn
-Limpeza de dados
-Insights para portfólio
+* ✔ Criação de visualizações gráficas
+* ✔ Aplicação de filtros e análises avançadas
+* ✔ Organ
+
+## 👨‍💻 Autor
+
+Projeto desenvolvido por **Miguel Reis** durante a Imersão de Dados da Alura.
+
+📌 GitHub: [https://github.com/mig-reis](https://github.com/mig-reis)
+
+---
+
+⭐ Se você gostou do projeto, fique à vontade para deixar uma estrela no repositório!
