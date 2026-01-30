@@ -8,8 +8,8 @@ def limpar_dados(df):   # Limpa dados faltantes e ajusta tipos
     print(df.columns)   # Verifica colunas disponíveis
     df_limpo = df.dropna()  # Remove linhas com dados faltantes
 
-    if 'work_year' in df_limpo.columns: # Ajusta tipo de dado da coluna 'work_year'
-        df_limpo['work_year'] = df_limpo['work_year'].astype('Int64')   # Usa Int64 para permitir NaN se necessário
+    if 'ano_trabalho' in df_limpo.columns: # Ajusta tipo de dado da coluna 'ano_trabalho'
+        df_limpo['ano_trabalho'] = df_limpo['ano_trabalho'].astype('Int64')   # Usa Int64 para permitir NaN se necessário
 
     return df_limpo # Retorna o DataFrame limpo
 

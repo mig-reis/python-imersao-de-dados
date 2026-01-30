@@ -71,11 +71,8 @@ def main():
     df = traduzir_colunas(df)   # Traduz colunas
     df = traduzir_experiencia(df)    # Traduz valores categóricos   
 
-    explorar_dados(df)      # Agora sim analisa
-    analisar_categorias(df)
-
-
 
 if __name__ == "__main__":
     df = carregar_dados()
-    print(df.head())
+    explorar_dados(df)      # Agora sim analisa
+    analisar_categorias(df)
